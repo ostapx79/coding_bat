@@ -33,4 +33,3 @@ public boolean aIsBigger(inta, int b) {
     return (a > b && (a - b) >= 2);
 }
 ```
-## Strings
