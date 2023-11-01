@@ -14,5 +14,4 @@ class TwoE2Test {
         assertTrue(chCountTrue);
         assertFalse(chCountFalse);
     }
-
 }

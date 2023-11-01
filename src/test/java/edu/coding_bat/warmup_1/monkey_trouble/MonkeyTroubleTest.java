@@ -1,10 +1,12 @@
-package edu.coding_bat.warmup_1.sleep_in.monkey_trouble;
+package edu.coding_bat.warmup_1.monkey_trouble;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MonkeyTroubleTest {
+
     MonkeyTrouble monkeyTrouble;
 
     @Test
