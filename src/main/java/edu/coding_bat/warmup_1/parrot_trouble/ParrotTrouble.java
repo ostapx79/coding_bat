@@ -10,6 +10,7 @@ public class ParrotTrouble {
 
         // Example 2
         // if ((talking && (hour >= 0 && hour <= 6)) || (talking && (hour >= 21 && hour <= 23))) return true;
+        // else return false;
 
         // Example 3
         return ((talking && (hour >= 0 && hour <= 6)) || (talking && (hour >= 21 && hour <= 23)));
