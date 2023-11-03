@@ -1,4 +1,4 @@
-package edu.coding_bat.warmup_1.nearHundred;
+package edu.coding_bat.warmup_1.near_hundred;
 
 import org.junit.jupiter.api.Test;
 
