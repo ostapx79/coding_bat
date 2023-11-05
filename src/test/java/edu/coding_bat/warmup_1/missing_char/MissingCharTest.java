@@ -6,6 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MissingCharTest {
     MissingChar misChar = new MissingChar();
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     @Test
     public void missingChar1Test() {
         assertEquals(misChar.missingChar("kitten", 1), "ktten");
@@ -21,6 +25,7 @@ class MissingCharTest {
         assertEquals(misChar.missingChar("kitten", 4), "kittn");
     }
 
+<<<<<<< Updated upstream
     @Test
     public void missingChar4Test() {
         assertEquals(misChar.missingChar("Hi", 0), "i");
@@ -51,4 +56,6 @@ class MissingCharTest {
         assertEquals(misChar.missingChar("code", 3), "cod");
     }
 
+=======
+>>>>>>> Stashed changes
 }
