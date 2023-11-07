@@ -26,4 +26,39 @@ class LoneTeenTest {
     public void loneTeen4Test() {
         assertFalse(loneT.loneTeen(16, 17));
     }
+
+    @Test
+    public void loneTeen5Test() {
+        assertTrue(loneT.loneTeen(16, 9));
+    }
+
+    @Test
+    public void loneTeen6Test() {
+        assertFalse(loneT.loneTeen(16, 18));
+    }
+
+    @Test
+    public void loneTeen7Test() {
+        assertFalse(loneT.loneTeen(13, 19));
+    }
+
+    @Test
+    public void loneTeen8Test() {
+        assertTrue(loneT.loneTeen(13, 20));
+    }
+
+    @Test
+    public void loneTeen9Test() {
+        assertTrue(loneT.loneTeen(6, 18));
+    }
+
+    @Test
+    public void loneTeen10Test() {
+        assertTrue(loneT.loneTeen(99, 13));
+    }
+
+    @Test
+    public void loneTeen11Test() {
+        assertFalse(loneT.loneTeen(99, 99));
+    }
 }

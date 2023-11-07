@@ -4,7 +4,6 @@ public class LoneTeen {
     public boolean loneTeen(int a, int b) {
         if (a == b) return false;
 
-
         if ((a > 12 && a < 20) || (b > 12 && b < 20)) {
 
             boolean isOneA = false;
