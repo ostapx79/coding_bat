@@ -22,4 +22,24 @@ class In1020Test {
         assertFalse(in1020.in1020(8, 99));
     }
 
+    @Test
+    public void in1020_4Test() {
+        assertTrue(in1020.in1020(10, 99));
+    }
+
+    @Test
+    public void in1020_5Test() {
+        assertTrue(in1020.in1020(20, 20));
+    }
+
+    @Test
+    public void in1020_6Test() {
+        assertFalse(in1020.in1020(21, 21));
+    }
+
+    @Test
+    public void in1020_7Test() {
+        assertFalse(in1020.in1020(9, 9));
+    }
+
 }
