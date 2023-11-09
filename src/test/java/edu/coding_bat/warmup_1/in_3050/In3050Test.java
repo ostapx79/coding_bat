@@ -126,4 +126,5 @@ class In3050Test {
     public void in3050_24Test() {
         assertFalse(in3050.in3050T(35, 45));
     }
+
 }
