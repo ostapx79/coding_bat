@@ -42,7 +42,6 @@ class LastDigitTest {
         assertFalse(lastD.lastDigit(11, 0));
     }
 
-
     @Test
     public void lastDigit8Test() {
         assertTrue(lastD.lastDigitT(7, 17));
