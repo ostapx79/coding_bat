@@ -15,8 +15,12 @@ public class LastDigit {
             return resA == b;
 //            if (resA == b)
 //                return true;
-//            else
+//            elseLastDigit
 //                return false;
         }
+    }
+
+    public boolean lastDigitT(int a, int b) {
+        return (a % 10 == b % 10);
     }
 }
