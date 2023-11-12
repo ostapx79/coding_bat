@@ -81,4 +81,5 @@ class FrontTimesTest {
     public void frontTimes14Test() {
         assertEquals(frontT.frontTimesT("Abc", 0), "");
     }
+
 }
