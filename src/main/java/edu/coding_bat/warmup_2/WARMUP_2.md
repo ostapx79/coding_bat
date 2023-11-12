@@ -1,0 +1,20 @@
+# warmup_2
+- Medium warmup string/array loops (solutions available).
+- Средняя прогрев циклов строк/массивов (доступны решения).
+    - stringTimes
+    - doubleX
+    - last2
+    - array123
+    - altPairs
+    - noTriples
+    - frontTimes
+    - stringBits
+    - arrayCount9
+    - stringMatch
+    - stringYak
+    - has271
+    - countXX
+    - stringSplosion
+    - arrayFrontX
+    - stringX
+    - array667
