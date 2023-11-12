@@ -1,0 +1,34 @@
+# warmup_1
+- Simple warmup problems to get started (solutions available).
+- Простые проблемы с разминкой для начала (доступны решения).
+    - sleepIn
+    - monkeyTrouble
+    - sumDouble
+    - diff21
+    - parrotTrouble
+    - makes10
+    - hearHundred
+    - posNeg
+    - notString
+    - missingChar
+    - frontBack
+    - front3
+    - backAround
+    - or35
+    - front22
+    - startHi
+    - ysiHot
+    - in1020
+    - hasTeen
+    - loneTeen
+    - delDel
+    - mixStart
+    - startOz
+    - intMax
+    - close10
+    - in3050
+    - max1020
+    - stringE
+    - lastDigit
+    - endUp
+    - everyNth
