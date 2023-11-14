@@ -5,6 +5,7 @@ public class StringBits {
         String res = "";
         for (int i = 0; i < str.length(); i += 2) {
             res += str.charAt(i);
+            // alternative could use str.substring(i, i+1)
         }
         return res;
     }
