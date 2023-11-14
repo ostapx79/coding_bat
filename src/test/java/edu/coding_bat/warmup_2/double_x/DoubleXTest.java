@@ -61,4 +61,59 @@ class DoubleXTest {
     public void doubleX11Test() {
         assertFalse(doubleX.doubleX("xaxx"));
     }
+    @Test
+    public void doubleX12Test() {
+        assertTrue(doubleX.doubleXT("axxbb"));
+    }
+
+    @Test
+    public void doubleX13Test() {
+        assertFalse(doubleX.doubleXT("axaxax"));
+    }
+
+    @Test
+    public void doubleX14Test() {
+        assertTrue(doubleX.doubleXT("xxxxx"));
+    }
+
+    @Test
+    public void doubleX15Test() {
+        assertFalse(doubleX.doubleXT("xaxxx"));
+    }
+
+    @Test
+    public void doubleX16Test() {
+        assertFalse(doubleX.doubleXT("aaaax"));
+    }
+
+    @Test
+    public void doubleX17Test() {
+        assertFalse(doubleX.doubleXT(""));
+    }
+
+    @Test
+    public void doubleX18Test() {
+        assertFalse(doubleX.doubleXT("abc"));
+    }
+
+    @Test
+    public void doubleX19Test() {
+        assertFalse(doubleX.doubleXT("x"));
+    }
+
+    @Test
+    public void doubleX20Test() {
+        assertTrue(doubleX.doubleXT("xx"));
+    }
+
+    @Test
+    public void doubleX21Test() {
+        assertFalse(doubleX.doubleXT("xax"));
+    }
+
+    @Test
+    public void doubleX22Test() {
+        assertFalse(doubleX.doubleXT("xaxx"));
+    }
+
 }

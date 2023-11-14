@@ -7,17 +7,21 @@ public class DoubleX {
             return false;
         } else if (str.length() < 3) {
             if (str.startsWith("xx")) return true;
-        } else {
-            return false;
         }
 
-        String subStr = str.substring(0, 2);
-        // int count = 0;
+        String subStr = str.substring(0, 3);
 
         for (int i = 0; i < subStr.length(); i++) {
-            if (subStr.startsWith("xx")) return true;
+            if (subStr.startsWith("xx", i)) return true;
         }
-        // return !(count > 0);
         return false;
+    }
+
+    public boolean doubleXT(String str) {
+        int i = str.indexOf("x");
+        if (i == -1) return false;
+
+        if (i + 1 >= str.length()) return false;
+        return str.substring(i + 1, i + 2).equals("x");
     }
 }
