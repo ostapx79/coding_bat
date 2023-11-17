@@ -92,4 +92,73 @@ class Last2Test {
         assertEquals(last2.resRev("axxxaaxx"), "xxaaxxxa");
     }
 
+    @Test
+    public void last2_16Test() {
+        assertEquals(last2.last2T("hixxhi"), 1);
+    }
+
+    @Test
+    public void last2_17Test() {
+        assertEquals(last2.last2T("xaxxaxaxx"), 1);
+    }
+
+    @Test
+    public void last2_18Test() {
+        assertEquals(last2.last2T("axxxaaxx"), 2);
+    }
+
+    @Test
+    public void last2_19Test() {
+        assertEquals(last2.last2T("xxxx"), 2);
+    }
+
+    @Test
+    public void last2_20Test() {
+        assertEquals(last2.last2T("13121312"), 1);
+    }
+
+    @Test
+    public void last2_21Test() {
+        assertEquals(last2.last2T("11212"), 1);
+    }
+
+    @Test
+    public void last2_22Test() {
+        assertEquals(last2.last2T("13121311"), 0);
+    }
+
+    @Test
+    public void last2_23Test() {
+        assertEquals(last2.last2T("1717171"), 2);
+    }
+
+    @Test
+    public void last2_24Test() {
+        assertEquals(last2.last2T("hi"), 0);
+    }
+
+    @Test
+    public void last2_25Test() {
+        assertEquals(last2.last2T("h"), 0);
+    }
+
+    @Test
+    public void last2_26Test() {
+        assertEquals(last2.last2T(""), 0);
+    }
+
+    @Test
+    public void last2_27Test() {
+        assertEquals(last2.last2T("hh"), 0);
+    }
+
+    @Test
+    public void last2_28Test() {
+        assertEquals(last2.last2T("xxaxxaxxaxx"), 3);
+    }
+
+    @Test
+    public void last2_29Test() {
+        assertEquals(last2.last2T("xaxaxaxx"), 0);
+    }
 }
