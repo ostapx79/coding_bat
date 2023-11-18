@@ -2,8 +2,6 @@ package edu.coding_bat.warmup_2.array_count9;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.WeakHashMap;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayCount9Test {
