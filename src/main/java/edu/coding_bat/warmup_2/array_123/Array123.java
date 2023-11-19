@@ -8,28 +8,29 @@ public class Array123 {
        Учитывая массив целых чисел, верните true,
        если последовательность чисел 1, 2, 3 встречается где-то в массиве.
          */
-        //  0  1  2      0  1  2
-        // [1, 1, 2] == [1, 2, 3]
-        int[] resArr = {1, 2, 3};
+        String strNum = "";
 
-        int[] res1 = new int[3];
-        int[] res2 = new int[3];
-        int[] res3 = new int[3];
+        for (int i = 0; i < num.length; i++) {
+            strNum += num[i];
+        }
+        int count = 0;
+        for (int i = 0; i < strNum.length(); i++) {
+            if (strNum.startsWith("123", i)) {
+                count++;
+            }
+        }
 
-        res1[0] = num[0];
-        res1[1] = num[1];
-        res1[2] = num[2];
-
-        res2[0] = num[1];
-        res2[1] = num[2];
-        res2[2] = num[3];
-
-        res3[0] = num[2];
-        res3[1] = num[3];
-        res3[3] = num[4];
-
-        return res1 == resArr || res2 == resArr || res3 == resArr;
+        if (count > 0) return true;
+        return false;
     }
+
+    public boolean array123T(int[] nums) {
+        for (int i = 0; i < (nums.length - 2); i++) {
+            if (nums[i] == 1 && nums[i + 1] == 2 && nums[i + 2] == 3) return true;
+        }
+        return false;
+    }
+
     public static int[] getCycle(int[] array)
     {
         for (int i=1; i<array.length-1; i++){
