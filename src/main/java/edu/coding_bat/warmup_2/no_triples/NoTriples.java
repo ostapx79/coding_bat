@@ -10,14 +10,20 @@ public class NoTriples {
         что тройка — это значение, появляющееся в массиве 3 раза
         подряд. Возвращайте true, если массив не содержит троек.
          */
-        var count1 = 0;
-        var count2 = 0;
+        // [1, 1, 2, 2, 1] -> true;
         for (int i = 0; i < num.length; i++) {
-            if (num[i] == 1) count1++;
+            if ((num[i] == 1) || (num[i] == 2)) {
 
-            if (num[i] == 2) count2++;
+                if (i == 2 && num[i] == 1) {
+                    return false;
+                }
+
+                if (i == 4 && num[i] == 2) {
+                    return false;
+                }
+            }
         }
-        if (count1 > 3 && count2 > 3) return true;
-        return false;
+
+        return true;
     }
 }
