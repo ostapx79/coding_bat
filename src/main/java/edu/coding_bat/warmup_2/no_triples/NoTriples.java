@@ -11,29 +11,24 @@ public class NoTriples {
         подряд. Возвращайте true, если массив не содержит троек.
          */
         // [1, 1, 2, 2, 1] -> true;
-        if (num.length == 0) return true;
+        if (num.length < 3) return true;
 
-        var count = 0;
-        for (int i = 0; i < num.length; i++) {
-
-
-            if (((num[i] == 1) && (count < 2)) || ((num[i] == 2) && (count < 2))) {
-                count = 0;
-            } else {
-                count++;
-            }
-
-//            if ((num[i] == 1) || (num[i] == 2)) {
-//
-//                if ((i == 2 && num[i] == 1) || (i == 4 && num[i] == 2)) {
-//                    return false;
-//                }
-//
-//            }
+        for (int i = 0; i < (num.length - 2); i++) {
+            if (num[i] == 1 && num[i + 1] == 1 && num[i + 2] == 1) return false;
+            if (num[i] == 2 && num[i + 1] == 2 && num[i + 2] == 2) return false;
         }
 
-        if (count == 0) return true;
+        return true;
+    }
 
-        return false;
+    public boolean noTriplesT(int[] nums) {
+        // Iterate < length-2, so can use i+1 and i+2 in the loop.
+        // Return false immediately if every seeing a triple.
+        for (int i=0; i < (nums.length-2); i++) {
+            int first = nums[i];
+            if (nums[i+1]==first && nums[i+2]==first) return false;
+        }
+        // If we get here ... no triples.
+        return true;
     }
 }
