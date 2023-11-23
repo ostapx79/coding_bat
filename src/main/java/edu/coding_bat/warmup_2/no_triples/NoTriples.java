@@ -11,19 +11,29 @@ public class NoTriples {
         подряд. Возвращайте true, если массив не содержит троек.
          */
         // [1, 1, 2, 2, 1] -> true;
+        if (num.length == 0) return true;
+
+        var count = 0;
         for (int i = 0; i < num.length; i++) {
-            if ((num[i] == 1) || (num[i] == 2)) {
 
-                if (i == 2 && num[i] == 1) {
-                    return false;
-                }
 
-                if (i == 4 && num[i] == 2) {
-                    return false;
-                }
+            if (((num[i] == 1) && (count < 2)) || ((num[i] == 2) && (count < 2))) {
+                count = 0;
+            } else {
+                count++;
             }
+
+//            if ((num[i] == 1) || (num[i] == 2)) {
+//
+//                if ((i == 2 && num[i] == 1) || (i == 4 && num[i] == 2)) {
+//                    return false;
+//                }
+//
+//            }
         }
 
-        return true;
+        if (count == 0) return true;
+
+        return false;
     }
 }
