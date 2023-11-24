@@ -10,8 +10,12 @@ public class Has271 {
         Кроме того, 271 учитывается, даже если «1»
         отличается на 2 или меньше правильного значения.
          */
-        for (int i = 0; i < num.length - 2; i++) {
-            if (num[i] == 2 && num[i + 1] == 7 && num[i + 2] == 1) return true;
+        for (int i = 0; i < (num.length - 2); i++) {
+            var val = num[i];
+            if (num[i + 1] == (val + 5) &&
+                    Math.abs(num[i + 2] - (val - 1)) <= 2) {
+                return true;
+            }
         }
         return false;
     }
