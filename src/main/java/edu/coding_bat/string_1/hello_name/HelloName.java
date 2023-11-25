@@ -7,6 +7,6 @@ public class HelloName {
         Given a string name, e.g. "Bob", return a greeting of the form "Hello Bob!".
         Учитывая строковое имя, например. «Боб», вернуть приветствие в форме «Привет, Боб!».
          */
-        return "Hello " + str + "!";
+        return "Hello, " + str + "!";
     }
 }
