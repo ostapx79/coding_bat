@@ -1,0 +1,38 @@
+# String_1
+- Basic string problems -- no loops. Use + to combine Strings, str.length() is the number of chars in a String,
+str.substring(i, j) extracts the substring starting at index i and running up to but not including index j. 
+- Основные проблемы со строками — никаких циклов. Используйте + для объединения строк, str.length() — это количество
+символов в строке, str.substring(i, j) извлекает подстроку, начиная с индекса i и заканчивая индексом j, но не включая его.
+    - helloName H
+    - makeAbba H
+    - makeTags
+    - makeOutWord
+    - extraEnd
+    - firstTwo
+    - firstHalf
+    - withoutEnd
+    - comboString
+    - nonStart
+    - right2
+    - left2
+    - theEnd
+    - withoutEnd2
+    - middleTwo
+    - endsLy
+    - nTwice
+    - twoChar
+    - middleThree
+    - hasBad
+    - atFirst
+    - lastChars
+    - conCat
+    - lastTwo
+    - seeColor
+    - frontAgain
+    - minCat
+    - ExtraFront
+    - without2
+    - deFront
+    - startWord
+    - withoutX
+    - withoutX2
