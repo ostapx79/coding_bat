@@ -74,7 +74,7 @@ class Has271Test {
 
     @Test
     public void setHas271_14Test() {
-        assertTrue(has271.has271(new int[]{1, 1,4, 9, 4, 9, 2}));
+        assertTrue(has271.has271(new int[]{1, 1, 4, 9, 4, 9, 2}));
     }
 
 }
