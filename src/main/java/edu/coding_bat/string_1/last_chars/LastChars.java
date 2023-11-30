@@ -15,7 +15,7 @@ public class LastChars {
 
     public String lastChars(String strOne, String strTwo) {
         if (strOne.isEmpty() && strTwo.isEmpty()) return "@@";
-        else if (strOne.isEmpty()) return "@" + strTwo.substring(strOne.length() - 1);
+        else if (strOne.isEmpty()) return "@" + strTwo.substring(strTwo.length() - 1);
         else if (strTwo.isEmpty()) return strOne.charAt(0) + "@";
         return strOne.charAt(0) + strTwo.substring(strTwo.length() - 1);
     }
