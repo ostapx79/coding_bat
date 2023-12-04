@@ -19,10 +19,10 @@ public class StartWord {
     в строке «hippo» слово «hi» возвращает «hi», а «xip»
     возвращает «hip». Слово будет иметь длину не менее 1.
      */
-    public String startWord(String a, String b) {
-        var length = b.length();
-        if (a.length() < 2 || b.length() < 2) return a.substring(0, 1);
-        if (a.substring(0, 2).equals(b.substring(0, 2))) return a.substring(0, 2);
-        return a.substring(0, length);
+    public String startWord(String str, String word) {
+        if (str.isEmpty()) return "";
+        else if (str.substring(0, 1).equals(word.substring(0, 1))) return str.substring(0, 1);
+        else if (str.substring(0, 2).equals(word.substring(0, 2))) return str.substring(0, 2);
+        return str.substring(0, word.length());
     }
 }
