@@ -20,9 +20,7 @@ public class StartWord {
     возвращает «hip». Слово будет иметь длину не менее 1.
      */
     public String startWord(String str, String word) {
-        if (str.isEmpty()) return "";
-        else if (str.substring(0, 1).equals(word.substring(0, 1))) return str.substring(0, 1);
-        else if (str.substring(0, 2).equals(word.substring(0, 2))) return str.substring(0, 2);
+        if (str.isEmpty() || (str.length() == 1 && word.length() > 1)) return "";
         return str.substring(0, word.length());
     }
 }
