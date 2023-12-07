@@ -23,17 +23,15 @@ public class StartWord {
         if (str.isEmpty() || (str.length() == 1 && word.length() > 1)) return "";
 
         // "hippo", "i" -> "h"
-
-        if (str.length() > 2) {
-            if ((word.length() == 1 && word.substring(0, 1).equals("i")) || word.length() == 2) {
-                if (word.substring(0, 1).equals("i")) {
+        if (str.length() > 1) {
+            if ((word.length() == 1 && word.charAt(0) == 'i') || word.length() == 2) {
+                if (word.charAt(0) == 'i') {
                     return "";
                 } else {
                     return str.substring(0, word.length());
                 }
             }
-            if (!str.substring(1, 2).equals(word.substring(1, 2))) return "";
-            else if (!str.substring(1, 3).equals(word.substring(1, 3))) return "";
+            if (!str.substring(1, 3).equals(word.substring(1, 3))) return "";
         }
 
         return str.substring(0, word.length());
