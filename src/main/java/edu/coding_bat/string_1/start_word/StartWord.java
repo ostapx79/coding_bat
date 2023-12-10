@@ -25,7 +25,7 @@ public class StartWord {
         // "hippo", "i" -> "h"
         if (str.length() > 1) {
             if ((word.length() == 1 && word.charAt(0) == 'i') || word.length() == 2) {
-                if (word.charAt(0) == 'i') {
+                if (word.charAt(0) == 'i' && word.length() > 1) {
                     return "";
                 } else {
                     return str.substring(0, word.length());
