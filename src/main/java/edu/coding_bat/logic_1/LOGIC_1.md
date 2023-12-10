@@ -1,0 +1,33 @@
+# Logic_1
+- Basic boolean logic puzzles -- if else && || !.
+- Базовые головоломки на болевую логику – если еще && || !.
+    - cigarParty H
+    - dateFashion H
+    - squirrelPlay
+    - caughtSpeeding
+    - sortSum
+    - alarmClock
+    - love6
+    - in1Top10
+    - specialEleven
+    - more20
+    - old35
+    - less20
+    - nearTen
+    - teenSum
+    - answerCell
+    - teaParty
+    - fizzString H
+    - fizzString2
+    - twoAsOne
+    - inOrder
+    - inOrderEqual
+    - lastDigit
+    - lessBy10 H
+    - withoutDoubles
+    - maxMod5
+    - redTicket
+    - greenTicket
+    - blueTicket
+    - shareDigit
+    - sumLimit
