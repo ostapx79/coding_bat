@@ -21,4 +21,34 @@ class AlarmClockTest {
     public void setAlarmClock3Test() {
         assertEquals(alarmClock.alarmClock(0, false), "10:00");
     }
+
+    @Test
+    public void setAlarmClock4Test() {
+        assertEquals(alarmClock.alarmClock(6, false), "10:00");
+    }
+
+    @Test
+    public void setAlarmClock5Test() {
+        assertEquals(alarmClock.alarmClock(0, true), "off");
+    }
+
+    @Test
+    public void setAlarmClock6Test() {
+        assertEquals(alarmClock.alarmClock(6, true), "off");
+    }
+
+    @Test
+    public void setAlarmClock7Test() {
+        assertEquals(alarmClock.alarmClock(1, true), "10:00");
+    }
+
+    @Test
+    public void setAlarmClock8Test() {
+        assertEquals(alarmClock.alarmClock(3, true), "10:00");
+    }
+
+    @Test
+    public void setAlarmClock9Test() {
+        assertEquals(alarmClock.alarmClock(5, true), "10:00");
+    }
 }
