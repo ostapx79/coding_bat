@@ -16,7 +16,6 @@ public class TeenSum {
         int sum = a + b;
         if ((a < 13 || b < 13) && (a > 19 || b > 19)) return sum;
         if (sum > 13 && sum < 19) return 19;
-        // if (a > 19 && b > 19) return sum;
         return sum;
     }
 }
