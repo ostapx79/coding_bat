@@ -22,4 +22,19 @@ class AnswerCellTest {
         assertFalse(answerCell.answerCell(true, false, false));
     }
 
+    @Test
+    public void setAnswerCell4Test() {
+        assertTrue(answerCell.answerCell(true, true, false));
+    }
+
+    @Test
+    public void setAnswerCell5Test() {
+        assertTrue(answerCell.answerCell(false, true, false));
+    }
+
+    @Test
+    public void setAnswerCell6Test() {
+        assertFalse(answerCell.answerCell(true, true, true));
+    }
+
 }
