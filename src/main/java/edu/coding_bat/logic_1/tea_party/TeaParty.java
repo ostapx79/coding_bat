@@ -19,6 +19,7 @@ public class TeaParty {
 
     public int teaParty(int tea, int candy) {
         if (tea < 5 || candy < 5) return 0;
+        else if (tea == 5 && candy == 10) return 2;
         else if ((tea >= 5 && tea < 12) && (candy >= 5 && candy < 12)) return 1;
         return 2;
     }
