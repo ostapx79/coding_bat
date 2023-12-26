@@ -15,6 +15,8 @@ public class AnswerCell {
      */
 
     public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
-        return false;
+        return (!isMorning && !isMom && !isAsleep)
+                || (isMorning && isMom && !isAsleep)
+                || (!isMorning && isMom && !isAsleep);
     }
 }
