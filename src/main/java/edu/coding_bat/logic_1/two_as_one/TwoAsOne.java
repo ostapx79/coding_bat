@@ -10,7 +10,9 @@ public class TwoAsOne {
 
     public boolean twoAsOne(int a, int b, int c) {
         int res = 0;
-        if (a == 0 || b == 0 || c == 0) return true;
+        if ((a == 0 || b == 0 || c == 0) && (a == b || b == c || a == c)) {
+            return true;
+        }
         if (a > b && a > c) {
             res = Math.abs(b) + Math.abs(c);
             return res == a;
