@@ -14,6 +14,7 @@ public class InOrder {
     public boolean inOrder(int a, int b, int c, boolean bOk) {
         // 4, 5, 2, true -> false
         if (a <= b) {
+            if (b > c) return false;
             if (b < c || bOk) return true;
         } else if (a > b) {
             if (b < c && bOk) return true;
