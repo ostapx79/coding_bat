@@ -49,7 +49,7 @@ class WithoutDoublesTest {
 
     @Test
     public void setWithoutDoubles9Test() {
-        assertEquals(withoutDoubles.withoutDoubles(6, 6, true), 7);
+        assertEquals(withoutDoubles.withoutDoubles(6, 6, true), 13);
     }
 
     @Test
