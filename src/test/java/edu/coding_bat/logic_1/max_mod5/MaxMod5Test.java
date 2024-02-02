@@ -22,7 +22,6 @@ class MaxMod5Test {
         assertEquals(maxMod5.maxMod5(3, 2), 3);
     }
 
-<<<<<<< HEAD
     @Test
     public void setMaxMod5_4Test() {
         assertEquals(maxMod5.maxMod5(8, 12), 12);
@@ -62,6 +61,4 @@ class MaxMod5Test {
     public void setMaxMod5_Test() {
         assertEquals(maxMod5.maxMod5(1, 2), 2);
     }
-=======
->>>>>>> origin/main
 }
